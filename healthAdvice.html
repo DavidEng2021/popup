@@ -10,20 +10,30 @@
 </head>
 
 <body>
-
+    <!-- 蓋板背景 -->
+    <div class="overlay"></div>
 
     <div class="container">
-        
+
+        <div class="advice1">
+            <div class="textbox">
+                <p id="advice2"></p>
+            </div>
+        </div>
+
         <form class="form">
+            <!-- 特效 -->
+            <span class="anima"></span>
+            <span class="anima"></span>
+            <span class="anima"></span>
+            <span class="anima"></span>
+
+            <h3 class="title">健康小測試!</h3>
+
             <div id="orangeBox">
                 <span id="x">X</span>
-              </div>
-              <!-- 關閉圖標 -->
-            <div class="advice1">
-                <div  class="textbox">
-                <p id="advice2"></p>
-                </div>
             </div>
+            <!-- 關閉圖標 -->
 
             <div class="number">
                 <label for="weight">體重</label>
@@ -43,8 +53,9 @@
                 <input name="bitter" type="checkbox" id="bit" value="苦">
             </div>
             <button type="button" class="button" id="button">確定</button>
-            <input type="reset" value="重設"  class="reset">
+            <input type="reset" value="重設" class="reset">
         </form>
+
     </div>
 
     <script src="healthAdvice.js"></script>

@@ -1,13 +1,17 @@
-const popup = document.querySelector('.form');
+// const popup = document.querySelector('.form');
+const container = document.querySelector('.container');
+const overlay = document.querySelector('.overlay');
 window.onload = function(){
     setTimeout(function(){
-        popup.style.display='flex';
+        container.style.display='flex';
+        overlay.style.display='block';
     }, 1000);    
 }
 
 const x =document.getElementById('x');
 x.addEventListener('click', ()=>{
-    popup.style.display='none';
+    container.style.display='none';
+    overlay.style.display='none';
 });
 
 
@@ -57,7 +61,7 @@ button.addEventListener('click', function () {
     //用年齡和BMI值以及口味偏好過濾
     var cos = costomer;
     const adv=document.getElementById('advice2');
-
+    
     //沒有輸入資料的情況
     if(cos.age==="" || w===null || h===null){
         adv.innerHTML=('資料不完整喔!');
